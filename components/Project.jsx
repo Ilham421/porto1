@@ -9,12 +9,14 @@ import project2 from "../assets/images/project-2.webp";
 import project3 from "../assets/images/project-3.webp";
 import project4 from "../assets/images/project-4.webp";
 import project5 from "../assets/images/project-5.webp";
+import project6 from "../assets/images/project-6.webp";
 import project_person from "../assets/images/project_person1.webp";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
 
 const Project = () => {
+  
   const projects = [
     {
       img: project1,
@@ -45,6 +47,12 @@ const Project = () => {
       name: "Games Pukul Tikus",
       github_link: "https://github.com/Ilham421/game_pukul_tikus",
       live_link: "https://games-tikus.netlify.app/",
+    },
+    {
+      img: project6,
+      name: "Games Kertas Gunting Batu",
+      github_link: "https://github.com/Ilham421/games-kertas-gunting-batu",
+      live_link: "https://games-kertas-gunting-batu.netlify.app/",
     },
   ];
 
@@ -99,7 +107,7 @@ const Project = () => {
                   {projects.map((project_info, i) => (
                     <SwiperSlide key={i}>
                       <div className="h-fit w-full p-4 bg-slate-700 rounded-xl" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="300">
-                        <img src={project_info.img} width="100%" height="50%" alt="my project" className="rounded-lg object-contain h-50 w-30" />
+                        <img src={project_info.img} alt="my project" className="rounded-lg object-contain h-50 w-30" />
                         <h3 className="text-xl my-4">{project_info.name}</h3>
                         <div className="flex gap-3">
                           <a
