@@ -55,7 +55,7 @@ const Achievment = () => {
                         {achievment.map((achievment_info) => (
                             <div className="max-w-sm bg-white w-[350px] z-10 rounded-lg border border-gray-200 hover:shadow-lg hover:text-black hover:scale-110 transform transition duration-1000 ease-in-out dark:bg-gray-800 dark:border-gray-700">
                                 <div id="zoom-img" className="shadow-lg w-full rounded-t-lg my-auto">
-                                    <img className="rounded-t-lg w-full h-[210px] md:h-[230px] shadow-lg" src={achievment_info.img} alt="certificate"/>
+                                    <img className="rounded-t-lg w-full h-[210px] md:h-[230px] shadow-lg" src={achievment_info.img} loading="lazy" alt="certificate"/>
                                 </div>
                                 <div class="p-5">
                                     <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{achievment_info.name}</h5>

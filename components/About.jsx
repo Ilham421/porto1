@@ -79,6 +79,7 @@ const About = () => {
                   <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="50" data-aos-delay="200" data-aos-once="true">
                     <img
                       src={aboutImg}
+                      loading="lazy"
                       alt="about"
                       className="w-full object-cover bg-cyan-600 rounded-xl"
                     />

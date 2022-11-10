@@ -37,7 +37,7 @@ const Hero = () => {
           <section id="home" className="min-h-screen flex py-20 md:flex-row flex-col items-center">
             <title>Ilham|Home</title>
             <div className="flex-1 flex items-center justify-center h-full" data-aos="fade-right" data-aos-duration="1500">
-              <img src={hero} alt="me"  width="300px" height="" className="md:w-11/12 h-full object-fit" />
+              <img src={hero} loading="lazy" alt="me"  width="300px" height="" className="md:w-11/12 h-full object-fit" />
             </div>
             <div className="flex-1 whitespace-nowrap">
               <div className="md:text-left text-center">
