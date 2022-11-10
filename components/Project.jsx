@@ -10,6 +10,7 @@ import project3 from "../assets/images/project-3.webp";
 import project4 from "../assets/images/project-4.webp";
 import project5 from "../assets/images/project-5.webp";
 import project6 from "../assets/images/project-6.webp";
+import project7 from "../assets/images/project-7.webp";
 import project_person from "../assets/images/project_person1.webp";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -53,6 +54,12 @@ const Project = () => {
       name: "Games Kertas Gunting Batu",
       github_link: "https://github.com/Ilham421/games-kertas-gunting-batu",
       live_link: "https://games-kertas-gunting-batu.netlify.app/",
+    },
+     {
+      img: project7,
+      name: "Games Racing Car",
+      github_link: "https://github.com/Ilham421/games_racing_car",
+      live_link: "https://games-racing-car.netlify.app/",
     },
   ];
 
