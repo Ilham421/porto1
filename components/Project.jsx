@@ -11,6 +11,7 @@ import project4 from "../assets/images/project-4.webp";
 import project5 from "../assets/images/project-5.webp";
 import project6 from "../assets/images/project-6.webp";
 import project7 from "../assets/images/project-7.webp";
+import project8 from "../assets/images/project-8.webp";
 import project_person from "../assets/images/project_person1.webp";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -55,11 +56,17 @@ const Project = () => {
       github_link: "https://github.com/Ilham421/games-kertas-gunting-batu",
       live_link: "https://games-kertas-gunting-batu.netlify.app/",
     },
-     {
+    {
       img: project7,
       name: "Games Racing Car",
       github_link: "https://github.com/Ilham421/games_racing_car",
       live_link: "https://games-racing-car.netlify.app/",
+    },
+    {
+      img: project8,
+      name: "Games Tic Tac Toe",
+      github_link: "https://github.com/Ilham421/games-tic_tac_toe",
+      live_link: "https://minigames-tictactoe.netlify.app/",
     },
   ];
 
@@ -71,7 +78,6 @@ const Project = () => {
       setLoading(false)
     },2000)
   },[])
-
 
   return (
     <div>
