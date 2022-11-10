@@ -88,8 +88,8 @@ const Skills = () => {
               </div>
             </div>
           </section>
-        <Footer />
-        <Bot />
+          <Footer />
+          <Bot />
         </div>
       }
     </div>

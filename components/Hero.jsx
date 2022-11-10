@@ -52,12 +52,12 @@ const Hero = () => {
                 data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="50" data-aos-delay="350">
                   Junior Web Developer
                 </h4>
-                  <button onClick={(e) => {
-                    e.preventDefault();
-                    window.open("https://linktr.ee/contactIlham", "_blank")
-                  }} className="bg-green-500 rounded-full p-5 mt-8 text-lg text-black font-semibold hover:shadow-lg hover:bg-green-500 hover:text-black hover:font-bold transform transition duration-1000 ease-in-out hover:scale-110">
-                  <i className="bi bi-chat-dots pr-2"></i>Let's Chat<i className="bi bi-arrow-right pl-2"></i>
-                  </button>
+                <button onClick={(e) => {
+                  e.preventDefault();
+                  window.open("https://linktr.ee/contactIlham", "_blank")
+                }} className="bg-green-500 rounded-full p-5 mt-8 text-lg text-black font-semibold hover:shadow-lg hover:bg-green-500 hover:text-black hover:font-bold transform transition duration-1000 ease-in-out hover:scale-110">
+                <i className="bi bi-chat-dots pr-2"></i>Let's Chat<i className="bi bi-arrow-right pl-2"></i>
+                </button>
                 <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5"
                 data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="20" data-aos-delay="350" data-aos-once="true">
                   {social_media?.map((icon) => (
@@ -75,13 +75,13 @@ const Hero = () => {
                   <button onClick={(e)=>{
                     e.preventDefault();
                     window.location.href='/about';
-                  }} className="md:w-[520px] w-[310px] h-[85px] bg-red-400 rounded-2xl px-5 py-2 mt-8 hover:shadow-lg hover:text-black hover:font-semibold transform transition duration-1000 ease-in-out hover:scale-110">
+                  }} className="md:w-[520px] w-[310px] h-[85px] bg-red-400 rounded-2xl px-5 py-2 mt-8 hover:shadow-lg hover:text-black hover:font-semibold transform transition duration-1000 ease-in-out hover:scale-90">
                   <i class="bi bi-person-square pl-10 pr-5 text-2xl"></i><span className="text-xl">ABOUT</span><i className="bi bi-arrow-down pr-10- pl-5 text-2xl"></i>
                   </button>
                   <button onClick={(e)=>{
                     e.preventDefault();
                     window.location.href='/contact';
-                  }} className="md:w-[520px] w-[310px] h-[85px] bg-blue-500 rounded-2xl px-5 mt-8 hover:shadow-lg hover:text-black hover:font-semibold transform transition duration-1000 ease-in-out hover:scale-110">
+                  }} className="md:w-[520px] w-[310px] h-[85px] bg-blue-500 rounded-2xl px-5 mt-8 hover:shadow-lg hover:text-black hover:font-semibold transform transition duration-1000 ease-in-out hover:scale-90">
                   <i className="bi bi-chat-dots pl-10 pr-5 text-2xl"></i><span className="text-xl">CONTACT</span><i className="bi bi-arrow-down pr-10 pl-5 text-xl"></i>
                   </button>
                 </div>
