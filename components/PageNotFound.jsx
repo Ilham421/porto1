@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 
 const PageNotFound= () =>{
+    
     const [loading, setLoading] = useState(false);
 
     useEffect(()=>{

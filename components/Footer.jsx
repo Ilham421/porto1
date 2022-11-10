@@ -1,13 +1,11 @@
 import React from "react";
 
-
 const Footer = () => {
+
   return (
     <footer className="footer-distributed">
-
         <div className="footer-left ">
             <h3>Junior Web <span>Developer</span></h3>
-
             <p className="footer-links">
                 <a href="/">Home </a>
                 |
@@ -19,10 +17,8 @@ const Footer = () => {
                 |
                 <a href="/contact"> Contact </a>
             </p>
-
             <p className="footer-company-name">Copyright &copy; <span className="yearsCopyright"></span> <strong>MohamadIlham</strong> All rights reserved</p>
         </div>
-
         <div className="footer-center">
             <div>
                 <i className="fa fa-map-marker"></i>

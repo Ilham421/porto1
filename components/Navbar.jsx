@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
   const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
   const menuLinks = [
@@ -12,6 +13,7 @@ const Navbar = () => {
     { name: "PROJECTS", link: "/projects" },
     { name: "CONTACT", link: "/contact" },
   ];
+  
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const nav = document.querySelector("nav");

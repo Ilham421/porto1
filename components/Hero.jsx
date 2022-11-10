@@ -4,7 +4,9 @@ import Footer from "./Footer";
 import Bot from "./Bot";
 import { useState,useEffect } from "react";
 import hero from "../assets/images/hero.webp";
+
 const Hero = () => {
+
   const social_media = [
     "logo-instagram",
     "logo-facebook",

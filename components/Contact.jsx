@@ -8,8 +8,14 @@ import {useRef} from 'react';
  const ContactUS = () => {
   // Contact
   const contact_info = [
-    { logo: "mail", text: "ilhammohamad614@gmail.com" },
-    { logo: "logo-whatsapp", text: "+62 813 8508 5695" },
+    { 
+      logo: "mail", 
+      text: "ilhammohamad614@gmail.com" 
+    },
+    { 
+      logo: "logo-whatsapp", 
+      text: "+62 813 8508 5695" 
+    },
     {
       logo: "location",
       text: "Bekasi, West Java, Indonesian",
