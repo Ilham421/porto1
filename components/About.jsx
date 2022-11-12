@@ -33,7 +33,7 @@ const About = () => {
     <div>
       {
         loading ?
-        <div className="bg-lime-800 min-h-screen grid justify-items-center items-center m-0 p-0">
+        
           <p className="md:text-6xl font-semibold animate-pulse text-4xl text-center">ABOUT</p>
         </div>
 
