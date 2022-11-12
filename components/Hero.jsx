@@ -69,7 +69,7 @@ const Hero = () => {
               <div className="md:text-left text-center">
                 <h1 className="md:text-4xl text-2xl md:leading-normal leading-10 text-white font-bold">
                   <span className="text-cyan-600 md:text-6xl text-5xl mt-2 md:mt-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                    Hayy
+                    Hello!
                   <br />
                   </span >
                   My Name is <span data-aos="fade-down-left" data-aos-duration="1000" data-aos-offset="50" data-aos-delay="350">Mohamad Ilham</span>
