@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import Navbar from "./Navbar"
 import Footer from "./Footer";
 import Bot from "./Bot";
@@ -84,34 +86,36 @@ const Project = () => {
     <div>
       {
         loading ?
-        <motion.div
-          className="bg-lime-800 min-h-screen overflow-hidden grid justify-items-center items-center m-0 p-0"
+        <div className="overflow-hidden">
+          <motion.div
+            className="bg-lime-800 min-h-screen grid justify-items-center items-center m-0 p-0"
 
-          initial={{
-            x: "50%",
-            opacity: 0,
-            scale: 1
-          }}
+            initial={{
+              x: "50%",
+              opacity: 0,
+              scale: 1
+            }}
 
-          animate={{
-            x: 0,
-            opacity: 1,
-            scale: 1
-          }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              scale: 1
+            }}
 
-          transition={{
-            duration: 0.8,
-            ease: "easeOut"
-          }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut"
+            }}
 
-          exit={{
-            x: "50%",
-            opacity: 0
-          }}
+            exit={{
+              x: "50%",
+              opacity: 0
+            }}
 
-        >
-          <p className="md:text-6xl font-semibold animate-pulse text-4xl text-center">PROJECTS</p>
-        </motion.div>
+          >
+            <p className="md:text-6xl font-semibold animate-pulse text-4xl text-center">PROJECTS</p>
+          </motion.div>
+        </div>
 
         :
         <div>
@@ -146,7 +150,7 @@ const Project = () => {
                   {projects.map((project_info, i) => (
                     <SwiperSlide key={i}>
                       <div className="h-fit w-full p-4 bg-slate-700 rounded-xl" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="300">
-                        <img src={project_info.img} loading="lazy" alt="my project" className="rounded-lg object-contain h-50 w-30" />
+                        <LazyLoadImage effect="blur" src={project_info.img} loading="lazy" alt="my project" className="rounded-lg object-contain h-50 w-30" />
                         <h3 className="text-xl my-4">{project_info.name}</h3>
                         <div className="flex gap-3">
                           <a

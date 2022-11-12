@@ -1,5 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import Navbar from "./Navbar"
 import Footer from "./Footer";
 import Bot from "./Bot";
@@ -39,34 +41,36 @@ const Achievment = () => {
         <div>
             {
                 loading ?
-                <motion.div
-                    className="bg-lime-800 min-h-screen overflow-hidden grid justify-items-center items-center m-0 p-0"
+                <div className="overflow-hidden">
+                    <motion.div
+                        className="bg-lime-800 min-h-screen grid justify-items-center items-center m-0 p-0"
 
-                    initial={{
-                        x: "50%",
-                        opacity: 0,
-                        scale: 1
-                    }}
+                        initial={{
+                            x: "50%",
+                            opacity: 0,
+                            scale: 1
+                        }}
 
-                    animate={{
-                        x: 0,
-                        opacity: 1,
-                        scale: 1
-                    }}
+                        animate={{
+                            x: 0,
+                            opacity: 1,
+                            scale: 1
+                        }}
 
-                    transition={{
-                        duration: 0.8,
-                        ease: "easeOut"
-                    }}
+                        transition={{
+                            duration: 0.8,
+                            ease: "easeOut"
+                        }}
 
-                    exit={{
-                        x: "50%",
-                        opacity: 0
-                    }}
+                        exit={{
+                            x: "50%",
+                            opacity: 0
+                        }}
 
-                    >
+                        >
                         <p className="md:text-6xl font-semibold animate-pulse text-4xl text-center">ACHIEVEMENTS</p>
-                </motion.div>
+                    </motion.div>
+                </div>
         
                 :
                 <div>
@@ -81,7 +85,7 @@ const Achievment = () => {
                         {achievment.map((achievment_info) => (
                             <div className="max-w-sm bg-white w-[350px] z-10 rounded-lg border border-gray-200 hover:shadow-lg hover:text-black hover:scale-110 transform transition duration-1000 ease-in-out dark:bg-gray-800 dark:border-gray-700">
                                 <div id="zoom-img" className="shadow-lg w-full rounded-t-lg my-auto">
-                                    <img className="rounded-t-lg w-full h-[210px] md:h-[230px] shadow-lg" src={achievment_info.img} loading="lazy" alt="certificate"/>
+                                    <LazyLoadImage effect="blur" className="rounded-t-lg w-full h-[210px] md:h-[230px] shadow-lg" src={achievment_info.img} loading="lazy" alt="certificate"/>
                                 </div>
                                 <div class="p-5">
                                     <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{achievment_info.name}</h5>

@@ -53,34 +53,36 @@ const Skills = () => {
     <div>
       {
         loading ?
-        <motion.div
-          className="bg-lime-800 min-h-screen overflow-hidden grid justify-items-center items-center m-0 p-0"
+        <div className="overflow-hidden">
+          <motion.div
+            className="bg-lime-800 min-h-screen grid justify-items-center items-center m-0 p-0"
 
-          initial={{
-            x: "50%",
-            opacity: 0,
-            scale: 1
-          }}
+            initial={{
+              x: "50%",
+              opacity: 0,
+              scale: 1
+            }}
 
-          animate={{
-            x: 0,
-            opacity: 1,
-            scale: 1
-          }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              scale: 1
+            }}
 
-          transition={{
-            duration: 0.8,
-            ease: "easeOut"
-          }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut"
+            }}
 
-          exit={{
-            x: "50%",
-            opacity: 0
-          }}
+            exit={{
+              x: "50%",
+              opacity: 0
+            }}
 
-        >
-          <p className="md:text-6xl font-semibold animate-pulse text-4xl text-center">SKILLS</p>
-        </motion.div>
+          >
+            <p className="md:text-6xl font-semibold animate-pulse text-4xl text-center">SKILLS</p>
+          </motion.div>
+        </div>
 
         :
         <div>

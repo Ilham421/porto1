@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Bot from "./Bot";
@@ -28,34 +30,36 @@ const Hero = () => {
     <div>
       {
         loading ?
-        <motion.div
-          className="bg-lime-800 min-h-screen overflow-hidden grid justify-items-center items-center m-0 p-0"
+        <div className="overflow-hidden">
+          <motion.div
+            className="bg-lime-800 min-h-screen grid justify-items-center items-center m-0 p-0"
 
-          initial={{
-            x: "50%",
-            opacity: 0,
-            scale: 1
-          }}
+            initial={{
+              x: "50%",
+              opacity: 0,
+              scale: 1
+            }}
 
-          animate={{
-            x: 0,
-            opacity: 1,
-            scale: 1
-          }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              scale: 1
+            }}
 
-          transition={{
-            duration: 0.8,
-            ease: "easeOut"
-          }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut"
+            }}
 
-          exit={{
-            x: "50%",
-            opacity: 0
-          }}
+            exit={{
+              x: "50%",
+              opacity: 0
+            }}
 
-        >
-          <p className="md:text-6xl font-semibold animate-pulse text-4xl text-center">HOME</p>
-        </motion.div>
+          >
+            <p className="md:text-6xl font-semibold animate-pulse text-4xl text-center">HOME</p>
+          </motion.div>
+        </div>
 
         :
         <div>
@@ -63,7 +67,7 @@ const Hero = () => {
           <section id="home" className="min-h-screen flex py-20 md:flex-row flex-col items-center">
             <title>Ilham|Home</title>
             <div className="flex-1 flex items-center justify-center h-full" data-aos="fade-right" data-aos-duration="1500">
-              <img src={hero} loading="lazy" alt="me"  width="300px" height="" className="md:w-11/12 h-full object-fit" />
+              <LazyLoadImage effect="blur" src={hero} loading="lazy" alt="me"  width="300px" height="" className="md:w-11/12 h-full object-fit" />
             </div>
             <div className="flex-1 whitespace-nowrap">
               <div className="md:text-left text-center">
