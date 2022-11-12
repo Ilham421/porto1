@@ -64,7 +64,7 @@ import {useRef} from 'react';
       {
         loading ?
         <motion.div
-          className="bg-lime-800 min-h-screen grid justify-items-center items-center m-0 p-0"
+          className="bg-lime-800 min-h-screen overflow-hidden grid justify-items-center items-center m-0 p-0"
 
           initial={{
             x: "50%",
