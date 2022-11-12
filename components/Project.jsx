@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Navbar from "./Navbar"
 import Footer from "./Footer";
 import Bot from "./Bot";
@@ -83,9 +84,34 @@ const Project = () => {
     <div>
       {
         loading ?
-        <div className="bg-lime-800 min-h-screen grid justify-items-center items-center m-0 p-0">
+        <motion.div
+          className="bg-lime-800 min-h-screen grid justify-items-center items-center m-0 p-0"
+
+          initial={{
+            x: "50%",
+            opacity: 0,
+            scale: 1
+          }}
+
+          animate={{
+            x: 0,
+            opacity: 1,
+            scale: 1
+          }}
+
+          transition={{
+            duration: 0.8,
+            ease: "easeOut"
+          }}
+
+          exit={{
+            x: "50%",
+            opacity: 0
+          }}
+
+        >
           <p className="md:text-6xl font-semibold animate-pulse text-4xl text-center">PROJECTS</p>
-        </div>
+        </motion.div>
 
         :
         <div>

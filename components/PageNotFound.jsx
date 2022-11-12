@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react";
+import { motion } from "framer-motion";
 
 const PageNotFound= () =>{
     
@@ -15,9 +16,33 @@ const PageNotFound= () =>{
         <div>
             {
                 loading ?
-                <div className="bg-lime-800 min-h-screen grid justify-items-center items-center m-0 p-0">
-                  <p className="md:text-6xl font-semibold animate-pulse text-4xl text-center">404</p>
-                </div>
+                <motion.div
+                    className="bg-lime-800 min-h-screen grid justify-items-center items-center m-0 p-0"
+
+                    initial={{
+                        x: "50%",
+                        opacity: 0,
+                        scale: 1
+                    }}
+
+                    animate={{
+                        x: 0,
+                        opacity: 1,
+                        scale: 1
+                    }}
+
+                    transition={{
+                        duration: 0.8,
+                        ease: "easeOut"
+                    }}
+
+                    exit={{
+                        x: "50%",
+                        opacity: 0
+                    }}
+                >
+                    <p className="md:text-6xl font-semibold animate-pulse text-4xl text-center">404</p>
+                </motion.div>
 
                 :
                 <div>
