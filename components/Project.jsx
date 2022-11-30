@@ -15,6 +15,8 @@ import project5 from "../assets/images/project-5.webp";
 import project6 from "../assets/images/project-6.webp";
 import project7 from "../assets/images/project-7.webp";
 import project8 from "../assets/images/project-8.webp";
+import project9 from "../assets/images/project-9.webp";
+import project10 from "../assets/images/project-10.webp";
 import project_person from "../assets/images/project_person1.webp";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -33,7 +35,7 @@ const Project = () => {
       img: project2,
       name: "Buku Tamu BLK",
       github_link: "https://github.com/Ilham421/bukutamu_blk",
-      live_link: "https://hey-ilham-portofolio.netlify.app",
+      live_link: "/achievements",
     },
     {
       img: project3,
@@ -70,6 +72,18 @@ const Project = () => {
       name: "Games Tic Tac Toe",
       github_link: "https://github.com/Ilham421/games-tic_tac_toe",
       live_link: "https://minigames-tictactoe.netlify.app/",
+    },
+    {
+      img: project9,
+      name: "Aplication chatting realtime",
+      github_link: "",
+      live_link: "https://app-chatme.netlify.app/",
+    },
+    {
+      img: project10,
+      name: "Multiplayer Tictactoe",
+      github_link: "/achievements",
+      live_link: "https://tictactoe-games-multiplayer.netlify.app/",
     },
   ];
 
@@ -150,7 +164,7 @@ const Project = () => {
                   {projects.map((project_info, i) => (
                     <SwiperSlide key={i}>
                       <div className="h-fit w-full p-4 bg-slate-700 rounded-xl" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="300">
-                        <LazyLoadImage delayTime={800} effect="blur" src={project_info.img} loading="lazy" alt="my project" className="rounded-lg object-contain h-50 w-30" />
+                        <LazyLoadImage delayTime={800} effect="blur" src={project_info.img} loading="lazy" alt="my project" className="rounded-lg h-50 w-100" />
                         <h3 className="text-xl my-4">{project_info.name}</h3>
                         <div className="flex gap-3">
                           <a
