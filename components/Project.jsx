@@ -150,7 +150,7 @@ const Project = () => {
                   {projects.map((project_info, i) => (
                     <SwiperSlide key={i}>
                       <div className="h-fit w-full p-4 bg-slate-700 rounded-xl" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="300">
-                        <LazyLoadImage effect="blur" src={project_info.img} loading="lazy" alt="my project" className="rounded-lg object-contain h-50 w-30" />
+                        <LazyLoadImage delayTime={800} effect="blur" src={project_info.img} loading="lazy" alt="my project" className="rounded-lg object-contain h-50 w-30" />
                         <h3 className="text-xl my-4">{project_info.name}</h3>
                         <div className="flex gap-3">
                           <a
